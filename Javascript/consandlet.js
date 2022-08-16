@@ -20,4 +20,19 @@ console.log(c);
 // temporal dead zone-time between var declaration and var initialization
 //we cant access the var untill its assigned with some value
 var sec = "b";
-console.log(sec);
+// console.log(sec);
+const num2 = 56;
+// let x=10; redeclaration not possible
+// console.log(x);
+let m = 20;
+x = m; // reinitialization is possible
+console.log(x);
+const y = 50; //redec and reinit not possible in const
+console.log(y);
+// console.log(num);error
+// const num=20;
+// const num = 30;
+let num = 30;
+let numbr2 = 20;
+num = numbr2; //error reintialization not possible in const
+console.log(numbr2);
