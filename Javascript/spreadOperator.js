@@ -41,7 +41,18 @@ let person = {
 };
 let personCopy = { ...person }; //shallow copy
 person.fName = "Nuthana";
-let deepCopy = { ...person, moreDetails: { ...person.moreDetails } };
+let deepCopy = {
+  ...person,
+  moreDetails: { ...person.moreDetails },
+  moreDetails: { ...person.moreDetails.address },
+};
 person.moreDetails.bloodGroup = "AB+";
 console.log(person);
 console.log(deepCopy);
+//deep copy will copy all the levels of array or object
+//new object will be created with new reference
+
+//JSON.parse():this will convert string to object
+//JSON.stringify():will convert object to string
+const personCopyJson = JSON.parse(JSON.stringify(person));
+console.log(personCopyJson);

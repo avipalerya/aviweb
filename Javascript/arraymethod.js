@@ -145,3 +145,48 @@ hobbies.forEach(function (val, index, arr) {
 //includes
 console.log(hobbies.includes("cricket"));
 console.log(hobbies.includes("swimming"));
+
+//find method
+//find method will take one callback function
+//it returns the  first element tat matches the condition if not returns undefined
+let arryFind = [11, 6, 7, 1, 2];
+const found = arryFind.find((value) => value > 10);
+console.log(found);
+
+//sort method
+//it will arrange element either in ascending or decending order
+//it will return a sorted array
+const sorting = arryFind.sort();
+console.log(sorting);
+console.log(arryFind.sort());
+
+//splice method-add/remove elements in the middle of the array
+//arrayData.splice(start-index,no-of-ele-to-be-removed,new-elem-to-be-added)
+//it will affect the original array
+//it will return the removed ele if any ele are removed
+
+let spliceArray = [2, 4, 7, 3, 5, 6, 8, 9, 10];
+let splicedArry = spliceArray.splice(3, 2, 56, 78);
+console.log(spliceArray); //new array with added elements
+console.log(splicedArry); //it will return the deleted elements
+
+let noDelete = spliceArray.splice(2, 0, 25, 60);
+console.log(spliceArray);
+console.log(noDelete);
+
+//slice method-only remove element works here
+//it returns the new array with new reference
+//it will take only 2 arguments(start(left-0 and right=-1))
+//to delete a ele in the mid of the array
+let sliceArray = ["cit", "ssit", "kit", "nist", "christ"];
+const data2 = sliceArray.slice(1);
+const data3 = sliceArray.slice(2);
+const data4 = sliceArray.slice(2, 4);
+const data5 = sliceArray.slice(2, -1);
+const data6 = sliceArray.slice(-2);
+console.log(data2);
+console.log(data3);
+console.log(data4);
+console.log(data5);
+console.log(data6);
+console.log(sliceArray);
