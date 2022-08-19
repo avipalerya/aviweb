@@ -3,7 +3,7 @@ console.log(this);
 console.log(window);
 console.log(this === window);
 
-const personObj = {
+let personObj = {
   firstName: "Avi",
   lastName: "Palerya S R",
   getFullName: function () {
@@ -12,5 +12,3 @@ const personObj = {
   },
 };
 console.log(personObj.getFullName());
-console.log(null == 0);
-console.log(null >= 0);
