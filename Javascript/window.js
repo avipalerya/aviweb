@@ -6,3 +6,4 @@ console.log(window.history);
 console.log(window.location);
 console.log(window.document);
 console.log(this===window);
+let v=console.log(window);
