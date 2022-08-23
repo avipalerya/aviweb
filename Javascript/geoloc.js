@@ -7,11 +7,16 @@ function showMap(position) {
   var mylatlong = position.coords.latitude + "," + position.coords.longitude;
 
   // Set Google map source url
-  var mapLink = "https://maps.googleapis.com/maps/api/staticmap?center=" + mylatlong + "&size=50x50";
+  var mapLink =
+    "https://maps.googleapis.com/maps/api/staticmap?center=" +
+    mylatlong +
+    "&size=50x50";
 
   // Create and insert Google map
-  document.getElementById("embedMap").innerHTML = "<img alt='Map Holder' src='" + mapLink + "'>";
+  document.getElementById("embedMap").innerHTML =
+    "<img alt='Map Holder' src='" + mapLink + "'>";
 }
 
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
+}
