@@ -6,6 +6,7 @@ class Parent extends React.Component {
     console.log("Parent componentDidMount executed");
   }
   constructor() {
+    //1.initialization and binding
     super();
     this.state = {
       text: "mounting Phase",
